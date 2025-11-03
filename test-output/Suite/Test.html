@@ -1,0 +1,179 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>11/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jul 15 12:29:54 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>34 seconds (34455 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>PL1 </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.GetEmpCount()'><b>GetEmpCount</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Define the endpoint to get employee count
+2. Send a GET request to '/web/index.php/api/v2/pim/employees/count' with a valid cookie
+3. Validate presence of RestAssured steps: given, cookie, get, and response
+4. Print and verify the status code and response body
+5. Assert the response status code is 200 and implementation is correct</td>
+<td></td>
+<td>1</td>
+<td>testcases.RestAssured_TestCases@75d2da2d</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.GetLeaveData()'><b>GetLeaveData</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Define the endpoint to retrieve holiday details for the year 2025
+2. Send a GET request to '/web/index.php/api/v2/leave/holidays' using a valid cookie
+3. Validate whether the method contains RestAssured steps like given, cookie, get, and response
+4. Print and verify the response status code and response body
+5. Assert that the response status code is 200 and implementation is as expected</td>
+<td></td>
+<td>1</td>
+<td>testcases.RestAssured_TestCases@75d2da2d</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.DeletePimEmp()'><b>DeletePimEmp</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Send GET request to '/web/index.php/api/v2/pim/employees' to fetch employee data
+2. Extract the 'empNumber' of the second employee from the response
+3. Construct DELETE request body with extracted employee ID
+4. Send DELETE request to '/web/index.php/api/v2/pim/employees' with valid session cookie
+5. Print and verify request body, status code, and response body
+6. Assert that the response status code is 200 and validate implementation correctness</td>
+<td></td>
+<td>2</td>
+<td>testcases.RestAssured_TestCases@75d2da2d</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.DeletePim()'><b>DeletePim</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Send GET request to '/web/index.php/api/v2/pim/termination-reasons' to retrieve list of termination reasons
+2. Extract the ID of the second termination reason from the response
+3. Construct DELETE request body using extracted ID
+4. Send DELETE request to '/web/index.php/api/v2/pim/termination-reasons' with the ID
+5. Print and verify request body, status code, and response body
+6. Assert the response status code is 200 and validate implementation correctness</td>
+<td></td>
+<td>2</td>
+<td>testcases.RestAssured_TestCases@75d2da2d</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.PutTerminationReason()'><b>PutTerminationReason</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Define the endpoint to update termination reason by ID
+2. Prepare request body with updated name value
+3. Send a PUT request to '/web/index.php/api/v2/pim/termination-reasons/1' with valid cookie and JSON body
+4. Print the request body, status code, and response body
+5. Assert the response status code is 200 and validate implementation correctness</td>
+<td></td>
+<td>1</td>
+<td>testcases.RestAssured_TestCases@75d2da2d</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.PutVimEmp()'><b>PutVimEmp</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Send GET request to '/web/index.php/api/v2/pim/employees' to retrieve employee data
+2. Extract empNumber of the second employee from the response
+3. Construct the PUT endpoint using the extracted empNumber
+4. Create request body with updated employee details (firstName, lastName, etc.)
+5. Send PUT request with valid session cookie and request body
+6. Print and verify request and response details
+7. Assert that the response status code is 200 and validate implementation correctness</td>
+<td></td>
+<td>2</td>
+<td>testcases.RestAssured_TestCases@75d2da2d</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.GetLeaveType()'><b>GetLeaveType</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Define the endpoint to retrieve all leave types with no limit
+2. Send a GET request to '/web/index.php/api/v2/leave/leave-types?limit=0' using a valid session cookie
+3. Validate implementation contains: given, cookie, get, and response
+4. Print and verify status code and response body
+5. Assert that the status code is 200 and implementation is correct</td>
+<td></td>
+<td>0</td>
+<td>testcases.RestAssured_TestCases@75d2da2d</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.PostPimEmp()'><b>PostPimEmp</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Generate a unique employee ID dynamically
+2. Construct the request body with first name, middle name, last name, null picture, and unique employee ID
+3. Send POST request to '/web/index.php/api/v2/pim/employees' with valid session cookie
+4. Print and verify request body, status code, and response body
+5. Assert that the response status code is 200 and validate implementation correctness</td>
+<td></td>
+<td>1</td>
+<td>testcases.RestAssured_TestCases@75d2da2d</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.loginWithSeleniumAndGetCookie()'><b>loginWithSeleniumAndGetCookie</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: Login to OrangeHRM and retrieve session cookie</td>
+<td></td>
+<td>15</td>
+<td>testcases.RestAssured_TestCases@75d2da2d</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.GetHolidayData()'><b>GetHolidayData</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Define the endpoint to fetch holiday data for the year 2025
+2. Send a GET request to '/web/index.php/api/v2/leave/holidays' with a valid cookie
+3. Validate if the implementation uses correct RestAssured steps (given, cookie, get, response)
+4. Print the response status code and body for verification
+5. Assert the status code is 200 and implementation is correct</td>
+<td></td>
+<td>3</td>
+<td>testcases.RestAssured_TestCases@75d2da2d</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.GetUsageReport()'><b>GetUsageReport</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Define the endpoint to retrieve all leave types with no limit
+2. Send a GET request to '/web/index.php/api/v2/leave/leave-types?limit=0' using a valid session cookie
+3. Validate implementation contains: given, cookie, get, and response
+4. Print and verify status code and response body
+5. Assert that the status code is 200 and implementation is correct</td>
+<td></td>
+<td>0</td>
+<td>testcases.RestAssured_TestCases@75d2da2d</td></tr>
+</table><p>
+</body>
+</html>
