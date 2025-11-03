@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="16" passed="16" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-22T10:55:32 IST" name="Default suite" finished-at="2025-08-22T10:56:05 IST" duration-ms="32661">
+    <groups>
+      <group name="PL1">
+        <method signature="RestAssured_TestCases.putEmployeeDeatils()[pri:12, instance:testcases.RestAssured_TestCases@424e1977]" name="putEmployeeDeatils" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.PostCandidate()[pri:14, instance:testcases.RestAssured_TestCases@424e1977]" name="PostCandidate" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.DeleterecruitmentCad()[pri:15, instance:testcases.RestAssured_TestCases@424e1977]" name="DeleterecruitmentCad" class="testcases.RestAssured_TestCases"/>
+      </group> <!-- PL1 -->
+      <group name="PL2">
+        <method signature="RestAssured_TestCases.loginWithSeleniumAndGetCookie()[pri:0, instance:testcases.RestAssured_TestCases@424e1977]" name="loginWithSeleniumAndGetCookie" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.GetHolidayData()[pri:1, instance:testcases.RestAssured_TestCases@424e1977]" name="GetHolidayData" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.GetLeaveData()[pri:2, instance:testcases.RestAssured_TestCases@424e1977]" name="GetLeaveData" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.GetEmpCount()[pri:3, instance:testcases.RestAssured_TestCases@424e1977]" name="GetEmpCount" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.GetLeaveType()[pri:4, instance:testcases.RestAssured_TestCases@424e1977]" name="GetLeaveType" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.GetUsageReport()[pri:5, instance:testcases.RestAssured_TestCases@424e1977]" name="GetUsageReport" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.GetVacancies()[pri:6, instance:testcases.RestAssured_TestCases@424e1977]" name="GetVacancies" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.GetJobTitles()[pri:7, instance:testcases.RestAssured_TestCases@424e1977]" name="GetJobTitles" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.GetEmpPersonalDetails()[pri:8, instance:testcases.RestAssured_TestCases@424e1977]" name="GetEmpPersonalDetails" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.GetEmpData()[pri:9, instance:testcases.RestAssured_TestCases@424e1977]" name="GetEmpData" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.GetLeaveWorkWeek()[pri:10, instance:testcases.RestAssured_TestCases@424e1977]" name="GetLeaveWorkWeek" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.PostEmployee()[pri:11, instance:testcases.RestAssured_TestCases@424e1977]" name="PostEmployee" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.PostJobCategoriesTest()[pri:13, instance:testcases.RestAssured_TestCases@424e1977]" name="PostJobCategoriesTest" class="testcases.RestAssured_TestCases"/>
+      </group> <!-- PL2 -->
+    </groups>
+    <test started-at="2025-08-22T10:55:32 IST" name="Default test" finished-at="2025-08-22T10:56:05 IST" duration-ms="32661">
+      <class name="testcases.RestAssured_TestCases">
+        <test-method signature="loginWithSeleniumAndGetCookie()[pri:0, instance:testcases.RestAssured_TestCases@424e1977]" started-at="2025-08-22T10:55:32 IST" name="loginWithSeleniumAndGetCookie" description="Login to OrangeHRM and retrieve session cookie" finished-at="2025-08-22T10:55:49 IST" duration-ms="16442" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithSeleniumAndGetCookie -->
+        <test-method signature="GetHolidayData()[pri:1, instance:testcases.RestAssured_TestCases@424e1977]" started-at="2025-08-22T10:55:49 IST" name="GetHolidayData" description="1. Define the endpoint to fetch holiday data for the year 2025
+2. Send a GET request to &#039;/web/index.php/api/v2/leave/holidays&#039; with a valid cookie
+3. Validate if the implementation uses correct RestAssured steps (given, cookie, get, response)
+4. Print the response status code and body for verification
+5. Assert the status code is 200 and implementation is correct" finished-at="2025-08-22T10:55:51 IST" depends-on-methods="testcases.RestAssured_TestCases.loginWithSeleniumAndGetCookie" duration-ms="1851" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetHolidayData -->
+        <test-method signature="GetLeaveData()[pri:2, instance:testcases.RestAssured_TestCases@424e1977]" started-at="2025-08-22T10:55:51 IST" name="GetLeaveData" description="1. Define the endpoint to retrieve holiday details for the year 2025
+2. Send a GET request to &#039;/web/index.php/api/v2/leave/holidays&#039; using a valid cookie
+3. Validate whether the method contains RestAssured steps like given, cookie, get, and response
+4. Print and verify the response status code and response body
+5. Assert that the response status code is 200 and implementation is as expected" finished-at="2025-08-22T10:55:51 IST" depends-on-methods="testcases.RestAssured_TestCases.loginWithSeleniumAndGetCookie" duration-ms="542" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetLeaveData -->
+        <test-method signature="GetEmpCount()[pri:3, instance:testcases.RestAssured_TestCases@424e1977]" started-at="2025-08-22T10:55:51 IST" name="GetEmpCount" description="1. Define the endpoint to get employee count
+2. Send a GET request to &#039;/web/index.php/api/v2/pim/employees/count&#039; with a valid cookie
+3. Validate presence of RestAssured steps: given, cookie, get, and response
+4. Print and verify the status code and response body
+5. Assert the response status code is 200 and implementation is correct" finished-at="2025-08-22T10:55:52 IST" depends-on-methods="testcases.RestAssured_TestCases.loginWithSeleniumAndGetCookie" duration-ms="656" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetEmpCount -->
+        <test-method signature="GetLeaveType()[pri:4, instance:testcases.RestAssured_TestCases@424e1977]" started-at="2025-08-22T10:55:52 IST" name="GetLeaveType" description="1. Define the endpoint to retrieve all leave types with no limit
+2. Send a GET request to &#039;/web/index.php/api/v2/leave/leave-types?limit=0&#039; using a valid session cookie
+3. Validate implementation contains: given, cookie, get, and response
+4. Print and verify status code and response body
+5. Assert that the status code is 200 and implementation is correct" finished-at="2025-08-22T10:55:52 IST" depends-on-methods="testcases.RestAssured_TestCases.loginWithSeleniumAndGetCookie" duration-ms="496" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetLeaveType -->
+        <test-method signature="GetUsageReport()[pri:5, instance:testcases.RestAssured_TestCases@424e1977]" started-at="2025-08-22T10:55:52 IST" name="GetUsageReport" description="1. Define the endpoint to retrieve all leave types with no limit
+2. Send a GET request to &#039;/web/index.php/api/v2/leave/leave-types?limit=0&#039; using a valid session cookie
+3. Validate implementation contains: given, cookie, get, and response
+4. Print and verify status code and response body
+5. Assert that the status code is 200 and implementation is correct" finished-at="2025-08-22T10:55:53 IST" depends-on-methods="testcases.RestAssured_TestCases.loginWithSeleniumAndGetCookie" duration-ms="1045" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUsageReport -->
+        <test-method signature="GetVacancies()[pri:6, instance:testcases.RestAssured_TestCases@424e1977]" started-at="2025-08-22T10:55:53 IST" name="GetVacancies" description="1. Define the endpoint to retrieve all Vacancies2. Send a GET request to &#039;/web/index.php/api/v2/recruitment/vacancies?limit=50&amp;offset=0&amp;sortField=vacancy.name&amp;sortOrder=ASC&amp;model=detailed&#039; using a valid session cookie
+3. Validate implementation contains: given, cookie, get, and response
+4. Print and verify status code and response body
+5. Assert that the status code is 200 and implementation is correct" finished-at="2025-08-22T10:55:55 IST" depends-on-methods="testcases.RestAssured_TestCases.loginWithSeleniumAndGetCookie" duration-ms="1033" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetVacancies -->
+        <test-method signature="GetJobTitles()[pri:7, instance:testcases.RestAssured_TestCases@424e1977]" started-at="2025-08-22T10:55:55 IST" name="GetJobTitles" description="1. Define the endpoint to retrieve all Job Titles
+2. Send a GET request to &#039;/web/index.php/api/v2/admin/job-titles?limit=0&#039; using a valid session cookie
+3. Validate implementation contains: given, cookie, get, and response
+4. Print and verify status code and response body
+5. Assert that the status code is 200 and implementation is correct" finished-at="2025-08-22T10:55:55 IST" depends-on-methods="testcases.RestAssured_TestCases.loginWithSeleniumAndGetCookie" duration-ms="468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetJobTitles -->
+        <test-method signature="GetEmpPersonalDetails()[pri:8, instance:testcases.RestAssured_TestCases@424e1977]" started-at="2025-08-22T10:55:55 IST" name="GetEmpPersonalDetails" description="1. Fetch the cookie from Selenium method and empNumber
+2. Send a GET request to &#039;/web/index.php/api/v2/pim/employees/{empNumber}/personal-details&#039; with a valid cookie
+3. Validate implementation contains: given, cookie, get, and response
+4. Print and verify status code and response body
+5. Assert that the status code is 200 and implementation is correct
+6. Assert that important fields are not null or empty" finished-at="2025-08-22T10:55:57 IST" depends-on-methods="testcases.RestAssured_TestCases.loginWithSeleniumAndGetCookie" duration-ms="1555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetEmpPersonalDetails -->
+        <test-method signature="GetEmpData()[pri:9, instance:testcases.RestAssured_TestCases@424e1977]" started-at="2025-08-22T10:55:57 IST" name="GetEmpData" description="1. Define the endpoint to fetch employee leave data
+2. Send a GET request to &#039;/web/index.php/api/v2/pim/employees/7&#039; with a valid cookie
+3. Validate implementation contains: given, cookie, get, and response
+4. Print and verify status code and response body
+5. Assert that the status code is 200 and implementation is correct
+6. Assert that important fields are not null or empty" finished-at="2025-08-22T10:55:58 IST" depends-on-methods="testcases.RestAssured_TestCases.loginWithSeleniumAndGetCookie" duration-ms="1393" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetEmpData -->
+        <test-method signature="GetLeaveWorkWeek()[pri:10, instance:testcases.RestAssured_TestCases@424e1977]" started-at="2025-08-22T10:55:58 IST" name="GetLeaveWorkWeek" description="1. Fetch the cookie from selenium method and empNumber
+2. Send a GET request to &#039;/web/index.php/api/v2/leave/workweek?model=indexed&#039; with a valid cookie
+3. Validate implementation contains: given, cookie, get, and response
+4. Print and verify status code and response body
+5. Assert that the status code is 200 and implementation is correct
+6. Assert that important fields are not null or empty" finished-at="2025-08-22T10:55:58 IST" depends-on-methods="testcases.RestAssured_TestCases.loginWithSeleniumAndGetCookie" duration-ms="451" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetLeaveWorkWeek -->
+        <test-method signature="PostEmployee()[pri:11, instance:testcases.RestAssured_TestCases@424e1977]" started-at="2025-08-22T10:55:58 IST" name="PostEmployee" description="Precondition: Null
+1. Generate a unique name
+2. Send POST request to &#039;/web/index.php/api/v2/pim/employees&#039;
+3. Make sure the request contains the request body and cookie
+4. Verify response contains the added name" finished-at="2025-08-22T10:55:59 IST" depends-on-methods="testcases.RestAssured_TestCases.loginWithSeleniumAndGetCookie" duration-ms="777" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PostEmployee -->
+        <test-method signature="putEmployeeDeatils()[pri:12, instance:testcases.RestAssured_TestCases@424e1977]" started-at="2025-08-22T10:55:59 IST" name="putEmployeeDeatils" description="1. Fetch employment status ID using GET &#039;/web/index.php/api/v2/admin/employment-statuses&#039;
+2. Construct endpoint &#039;/web/index.php/api/v2/admin/employment-statuses/{id}&#039;
+3. Send a PUT request with a valid cookie and body containing a new name
+4. Print request/response details
+5. Assert response code is 200 and updated name is reflected in the response" finished-at="2025-08-22T10:56:02 IST" depends-on-methods="testcases.RestAssured_TestCases.loginWithSeleniumAndGetCookie" duration-ms="2566" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putEmployeeDeatils -->
+        <test-method signature="PostJobCategoriesTest()[pri:13, instance:testcases.RestAssured_TestCases@424e1977]" started-at="2025-08-22T10:56:02 IST" name="PostJobCategoriesTest" description="Precondition: Null
+1. Generate a unique name
+2. Send POST request to &#039;/web/index.php/api/v2/pim/employees&#039;
+3. Make sure the request contains the request body and cookie
+4. Verify response contains the added name" finished-at="2025-08-22T10:56:03 IST" depends-on-methods="testcases.RestAssured_TestCases.loginWithSeleniumAndGetCookie" duration-ms="1267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PostJobCategoriesTest -->
+        <test-method signature="PostCandidate()[pri:14, instance:testcases.RestAssured_TestCases@424e1977]" started-at="2025-08-22T10:56:03 IST" name="PostCandidate" description="Precondition: Null
+1. Generate unique first name, last name, and email
+2. Send POST request to &#039;/web/index.php/api/v2/recruitment/candidates&#039;
+3. Make sure the request contains the body and cookie
+4. Verify the response contains the added candidate details" finished-at="2025-08-22T10:56:04 IST" depends-on-methods="testcases.RestAssured_TestCases.loginWithSeleniumAndGetCookie" duration-ms="947" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PostCandidate -->
+        <test-method signature="DeleterecruitmentCad()[pri:15, instance:testcases.RestAssured_TestCases@424e1977]" started-at="2025-08-22T10:56:04 IST" name="DeleterecruitmentCad" description="1. Fetch employment status ID using GET &#039;/web/index.php/api/v2/admin/employment-statuses&#039;
+2. Delete that employment status using DELETE &#039;/web/index.php/api/v2/admin/employment-statuses&#039;
+3. Assert response code is 200 and verify that the first employment status ID has changed" finished-at="2025-08-22T10:56:05 IST" depends-on-methods="testcases.RestAssured_TestCases.loginWithSeleniumAndGetCookie" duration-ms="1000" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleterecruitmentCad -->
+      </class> <!-- testcases.RestAssured_TestCases -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
